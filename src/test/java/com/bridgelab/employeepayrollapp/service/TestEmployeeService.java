@@ -57,15 +57,6 @@ public class TestEmployeeService {
 		assertThat(empList).isEqualTo(service.getAllEmp());
 		
 	}
-	
-//	@Test
-//	public void testGetAllEmpException() throws SQLException{
-//		
-//		when(empRepository.findAll()).thenThrow(SQLException.class);
-//		assertThrows(DatabaseReadException.class, () ->service.getAllEmp());
-//				//new RuntimeException("Something went wrong"));
-//		
-//	}
 
 	@Test
     public void testFindEmpById() {
